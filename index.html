@@ -1,1 +1,66 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Alerta con Imagen</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #eef3ff;
+      padding: 40px;
+    }
+
+    button {
+      background: #0066ff;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .alerta {
+      display: none;
+      background: white;
+      width: 320px;
+      margin: 30px auto;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+
+    .alerta img {
+      width: 120px;
+      border-radius: 10px;
+    }
+
+    .alerta h2 {
+      color: #0066ff;
+    }
+
+    .cerrar {
+      background: crimson;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Ejemplo de alerta con imagen</h1>
+
+  <button onclick="mostrarAlerta()">Mostrar alerta</button>
+
+  <div class="alerta" id="miAlerta">
+    <img src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" alt="Robot">
+    <h2>¡Hola estudiante!</h2>
+    <p>Esta es una alerta creada con HTML, CSS y JavaScript.</p>
+    <button class="cerrar" onclick="cerrarAlerta()">Cerrar</button>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
